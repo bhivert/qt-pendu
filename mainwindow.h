@@ -16,32 +16,32 @@ public:
     ~MainWindow();
 
 private slots:
-    void    on_A_released();
-    void    on_B_released();
-    void    on_C_released();
-    void    on_D_released();
-    void    on_E_released();
-    void    on_F_released();
-    void    on_G_released();
-    void    on_H_released();
-    void    on_I_released();
-    void    on_J_released();
-    void    on_K_released();
-    void    on_L_released();
-    void    on_M_released();
-    void    on_N_released();
-    void    on_O_released();
-    void    on_P_released();
-    void    on_Q_released();
-    void    on_R_released();
-    void    on_S_released();
-    void    on_T_released();
-    void    on_U_released();
-    void    on_V_released();
-    void    on_W_released();
-    void    on_X_released();
-    void    on_Y_released();
-    void    on_Z_released();
+    void    on_A_clicked();
+    void    on_B_clicked();
+    void    on_C_clicked();
+    void    on_D_clicked();
+    void    on_E_clicked();
+    void    on_F_clicked();
+    void    on_G_clicked();
+    void    on_H_clicked();
+    void    on_I_clicked();
+    void    on_J_clicked();
+    void    on_K_clicked();
+    void    on_L_clicked();
+    void    on_M_clicked();
+    void    on_N_clicked();
+    void    on_O_clicked();
+    void    on_P_clicked();
+    void    on_Q_clicked();
+    void    on_R_clicked();
+    void    on_S_clicked();
+    void    on_T_clicked();
+    void    on_U_clicked();
+    void    on_V_clicked();
+    void    on_W_clicked();
+    void    on_X_clicked();
+    void    on_Y_clicked();
+    void    on_Z_clicked();
 
     void    on_action_New_triggered();
 
