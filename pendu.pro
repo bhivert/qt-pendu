@@ -36,4 +36,4 @@ FORMS += \
 DISTFILES +=
 
 RESOURCES += \
-    imgs.qrc
+    res.qrc
