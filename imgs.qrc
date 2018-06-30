@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imgs/0.png</file>
+        <file>imgs/1.png</file>
+        <file>imgs/2.png</file>
+        <file>imgs/3.png</file>
+        <file>imgs/4.png</file>
+        <file>imgs/5.png</file>
+        <file>imgs/6.png</file>
+        <file>imgs/7.png</file>
+        <file>imgs/8.png</file>
+        <file>imgs/9.png</file>
+        <file>imgs/10.png</file>
+        <file>main.cpp</file>
+        <file>mainwindow.cpp</file>
+        <file>mainwindow.h</file>
+        <file>dics/fr.txt</file>
+    </qresource>
+</RCC>
