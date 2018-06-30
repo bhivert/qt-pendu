@@ -48,8 +48,8 @@ void    MainWindow::on_action_New_triggered()
     this->_life = 10;
     this->_setLife();
     this->_secret = "";
-    for (int j = 0; _word[j] != '\0'; ++j) {
-        this->_secret += '*';
+    for (int j = 0; this->_word[j] != '\0'; ++j) {
+        this->_secret += (this->_word[j] != '-') ? '*' : '-';
     }
     ui->word->setText(_secret);
 }
