@@ -25,6 +25,10 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="imgs.qrc">
+    <normaloff>:/imgs/10.png</normaloff>:/imgs/10.png</iconset>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
