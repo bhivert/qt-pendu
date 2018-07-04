@@ -5,6 +5,8 @@
 #include <QTextStream>
 #include <QMessageBox>
 
+#include "score.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
@@ -123,3 +125,8 @@ void    MainWindow::on_W_clicked() {this->_check_letter("Ww");}
 void    MainWindow::on_X_clicked() {this->_check_letter("Xx");}
 void    MainWindow::on_Y_clicked() {this->_check_letter("YyŸÿ");}
 void    MainWindow::on_Z_clicked() {this->_check_letter("Zz");}
+
+void MainWindow::on_action_Score_triggered()
+{
+    Score(this).exec();
+}

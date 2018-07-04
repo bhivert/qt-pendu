@@ -11,9 +11,6 @@
         <file>imgs/8.png</file>
         <file>imgs/9.png</file>
         <file>imgs/10.png</file>
-        <file>main.cpp</file>
-        <file>mainwindow.cpp</file>
-        <file>mainwindow.h</file>
         <file>dics/fr.txt</file>
     </qresource>
 </RCC>
