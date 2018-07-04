@@ -6,6 +6,7 @@
 #include <QMessageBox>
 
 #include "score.h"
+#include "mmo_config.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -135,4 +136,9 @@ void    MainWindow::on_Z_clicked() {this->_check_letter("Zz");}
 void MainWindow::on_action_Score_triggered()
 {
     Score(this).exec();
+}
+
+void MainWindow::on_actionConfi_guration_triggered()
+{
+    Mmo_config(this).exec();
 }

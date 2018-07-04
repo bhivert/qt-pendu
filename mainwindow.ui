@@ -520,7 +520,14 @@
     <addaction name="separator"/>
     <addaction name="actionE_xit"/>
    </widget>
+   <widget class="QMenu" name="menu_Multi_joueurs">
+    <property name="title">
+     <string>MM&amp;O</string>
+    </property>
+    <addaction name="actionConfi_guration"/>
+   </widget>
    <addaction name="menuFile"/>
+   <addaction name="menu_Multi_joueurs"/>
   </widget>
   <action name="actionE_xit">
    <property name="text">
@@ -535,6 +542,11 @@
   <action name="action_Score">
    <property name="text">
     <string>&amp;Score</string>
+   </property>
+  </action>
+  <action name="actionConfi_guration">
+   <property name="text">
+    <string>Confi&amp;guration</string>
    </property>
   </action>
  </widget>

@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -26,15 +26,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     score.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    mmo_config.cpp
 
 HEADERS += \
     score.h \
-    mainwindow.h
+    mainwindow.h \
+    mmo_config.h
 
 FORMS += \
         mainwindow.ui \
-    score.ui
+    score.ui \
+    mmo_config.ui
 
 DISTFILES +=
 

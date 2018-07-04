@@ -45,7 +45,9 @@ private slots:
 
     void    on_action_New_triggered();
 
-    void on_action_Score_triggered();
+    void    on_action_Score_triggered();
+
+    void on_actionConfi_guration_triggered();
 
 private:
     Ui::MainWindow          *ui;
