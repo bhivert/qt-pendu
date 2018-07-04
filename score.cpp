@@ -22,6 +22,7 @@ Score::Score(QWidget *parent) :
     QString     line;
     int         i = 0;
 
+    fstream.setCodec("UTF-8");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
         return ;
     while (!fstream.atEnd()) {

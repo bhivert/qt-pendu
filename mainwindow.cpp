@@ -78,6 +78,12 @@ void    MainWindow::_check_letter(const QString letter) {
     if (found) {
         ui->word->setText(this->_secret);
         if (this->_secret == this->_word) {
+            QFile file("score.csv");
+            if (file.open(QIODevice::Append | QIODevice::Text)) {
+                QTextStream fstream(&file);
+                fstream << this->_word << ';' << this->_life << '\n';
+                file.close();
+            }
             QMessageBox gamewone(QMessageBox::Question, "Game Wone !", "Play again ?", QMessageBox::Yes | QMessageBox::No);
             if (gamewone.exec() == QMessageBox::Yes)
                 this->on_action_New_triggered();
