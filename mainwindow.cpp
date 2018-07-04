@@ -41,6 +41,11 @@ void    MainWindow::_setLife() {
     ui->image->setPixmap(QPixmap(buff));
 }
 
+static QChar tab[2][2] = {
+    {'-', '-'},
+    {' ', ' '}
+};
+
 void    MainWindow::on_action_New_triggered()
 {
     size_t  i = rand() % this->_dic.size();
@@ -49,7 +54,12 @@ void    MainWindow::on_action_New_triggered()
     this->_setLife();
     this->_secret = "";
     for (int j = 0; this->_word[j] != '\0'; ++j) {
-        this->_secret += (this->_word[j] != '-' || this->_word[j] != ' ') ? '*' : '-';
+        for (size_t k = 0; k != 1; ++k) {
+            if (tab[k][0] == this->_word[k])
+                this->_secret += tab[k][1];
+            else
+                this->_secret += '*';
+        }
     }
     ui->word->setText(_secret);
 }
