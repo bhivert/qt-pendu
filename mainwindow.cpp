@@ -20,6 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QTextStream fstream(&file);
     QString     line;
 
+    fstream.setCodec("UTF-8");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
         return ;
     while (!fstream.atEnd()) {
@@ -57,7 +58,7 @@ void    MainWindow::on_action_New_triggered()
     this->_secret = "";
     for (int j = 0; this->_word[j] != '\0'; ++j) {
         for (size_t k = 0; k != 1; ++k) {
-            if (tab[k][0] == this->_word[k])
+            if (tab[k][0] == this->_word[j])
                 this->_secret += tab[k][1];
             else
                 this->_secret += '*';
@@ -125,7 +126,7 @@ void    MainWindow::on_Q_clicked() {this->_check_letter("Qq");}
 void    MainWindow::on_R_clicked() {this->_check_letter("Rr");}
 void    MainWindow::on_S_clicked() {this->_check_letter("Ss");}
 void    MainWindow::on_T_clicked() {this->_check_letter("Tt");}
-void    MainWindow::on_U_clicked() {this->_check_letter("UuÙùÛûÜü");}
+void    MainWindow::on_U_clicked() {this->_check_letter("UuÙùÛûÜüú");}
 void    MainWindow::on_V_clicked() {this->_check_letter("Vv");}
 void    MainWindow::on_W_clicked() {this->_check_letter("Ww");}
 void    MainWindow::on_X_clicked() {this->_check_letter("Xx");}
