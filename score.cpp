@@ -6,7 +6,7 @@
 #include <QStringList>
 #include <QTableWidgetItem>
 
-static QStringList _headers = {"Mot", "Coupa restant"};
+static QStringList _headers = {"Mots", "Coups restant"};
 
 Score::Score(QWidget *parent) :
     QDialog(parent),

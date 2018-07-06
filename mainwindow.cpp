@@ -82,6 +82,7 @@ void    MainWindow::_check_letter(const QString letter) {
             QFile file("score.csv");
             if (file.open(QIODevice::Append | QIODevice::Text)) {
                 QTextStream fstream(&file);
+                fstream.setCodec("UTF-8");
                 fstream << this->_word << ';' << this->_life << '\n';
                 file.close();
             }
